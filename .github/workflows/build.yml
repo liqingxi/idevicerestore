@@ -30,6 +30,7 @@ jobs:
           autoconf
           automake-wrapper
           liblzma
+          curl
     - name: prepare environment
       run: |
           dest=`echo ${{ matrix.msystem }} |tr [:upper:] [:lower:]`
