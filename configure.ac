@@ -60,7 +60,7 @@ case ${host_os} in
   *mingw32*|*cygwin*)
     AC_MSG_RESULT([yes])
     win32=true
-    GLOBAL_CFLAGS+=" -DCURL_STATICLIB -DWIN32 -D__LITTLE_ENDIAN__=1"
+    GLOBAL_CFLAGS+=" -DCURL_STATICLIB -DNGHTTP2_STATICLIB -DWIN32 -D__LITTLE_ENDIAN__=1"
     AC_LDFLAGS+=" -static-libgcc"
     ;;
   darwin*)
